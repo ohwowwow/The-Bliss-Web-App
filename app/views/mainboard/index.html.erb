@@ -1,0 +1,39 @@
+<body style="background-color:#CC9966">
+<center><h1>The Bliss Hotel Main Pages</h1></center>
+<p>Find me in app/views/mainboard/index.html.erb</p>
+
+<%= link_to 'View Rooms Status', view_room_status_rooms_path %>
+
+<%= form_tag :action => "create" do %>
+   News Message: <br /><%= text_area "message", "text"%><br />
+   <%= submit_tag %>
+<% end %>
+
+
+
+
+<!-- <%# form_for(@message) do |f| %>
+    <div class="field">
+      <%# text_field :text %>
+    </div>
+    <div class="actions">
+      <%# NewsMessage.submit %>
+    </div>
+<%# end %>
+-->
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

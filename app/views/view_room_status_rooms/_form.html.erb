@@ -1,0 +1,29 @@
+<%= form_for(@view_room_status_room) do |f| %>
+  <% if @view_room_status_room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@view_room_status_room.errors.count, "error") %> prohibited this view_room_status_room from being saved:</h2>
+
+      <ul>
+      <% @view_room_status_room.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.select :status, DropBox::ROOM_STATUS %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

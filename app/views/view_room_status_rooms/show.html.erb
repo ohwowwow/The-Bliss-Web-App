@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @view_room_status_room.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @view_room_status_room.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @view_room_status_room.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_view_room_status_room_path(@view_room_status_room) %> |
+<%= link_to 'Back', view_room_status_rooms_path %>

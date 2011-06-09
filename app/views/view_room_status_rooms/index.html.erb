@@ -1,0 +1,27 @@
+<h1>Room Status Rooms</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @view_room_status_rooms.each do |view_room_status_room| %>
+  <tr>
+    <td><%= view_room_status_room.id %></td>
+    <td><%= view_room_status_room.name %></td>
+    <td><%= view_room_status_room.status %></td>
+    <td><%= link_to 'Show', view_room_status_room %></td>
+    <td><%= link_to 'Edit', edit_view_room_status_room_path(view_room_status_room) %></td>
+    <td><%= link_to 'Destroy', view_room_status_room, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New View room status room', new_view_room_status_room_path %>

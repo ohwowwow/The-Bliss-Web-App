@@ -1,0 +1,2 @@
+module ViewRoomStatusRoomsHelper
+end
